@@ -19,7 +19,7 @@ function App() {
       setCantidad(cantidad-1)
     }
   const more = ()=>{
-    if(cantidad<24)
+    if(cantidad<16)
     setCantidad(cantidad+1)
   }
 
@@ -27,6 +27,7 @@ function App() {
     <div className="App">
 
       <h1>Color randomizer</h1>
+  
      <div className='container'>
 
      {mostrarTarjetas()}

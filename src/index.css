@@ -18,7 +18,7 @@ h1{
 .container{
 
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-gap: 1px;
   grid-auto-rows: minmax(2px, auto);
   height: 30vw;
@@ -55,4 +55,10 @@ h1{
   background-color: white;
   cursor: pointer;
 
+}
+
+.info{
+  color: white;
+    font-size: 1.2vw;
+      font-family: 'Hind Siliguri', sans-serif;
 }

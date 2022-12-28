@@ -9,6 +9,7 @@ function RandomColors() {
     
     
 
+   let hsl = `hsl(${random(255)},${random(100)}%,${random(100)}%)`
 
 
 
@@ -19,19 +20,22 @@ function RandomColors() {
   height: 10vw;
   border-radius: 20px;
   margin-bottom: 20px;
-  background-color: hsl(${random(255)},${random(100)}%,${random(100)}%);
+  background-color: ${hsl};
+  color: white;
 
   `
     return (
     <>
-    
+    <div> 
     <Cards>
 
-     
+
 
     </Cards>
-    
-
+    <div className='info'>
+    {hsl}
+    </div>
+    </div>
 
 
 
