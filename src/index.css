@@ -29,7 +29,7 @@ h1{
   justify-items: center;
 }
 .containerAmount{
-  height: 8vw;
+  height: 6vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,6 +59,37 @@ h1{
 
 .info{
   color: white;
-    font-size: 1.2vw;
+    font-size: 1vw;
       font-family: 'Hind Siliguri', sans-serif;
+}
+
+.cambioModo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: beige;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 0.5vw;
+  width: 5vw;
+  height: 3vw;
+  border-radius: 12px;
+  margin: 25px
+}
+
+.cambioModo:hover{
+  background-color: white;
+  cursor: pointer;
+
+}
+
+.seccionCambiar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regenerate{
+  width: 2vw;
 }

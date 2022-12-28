@@ -11,10 +11,10 @@ function CantidadTarjetas(props) {
    <div className='cantidad'>
     {props.cantidad}
     </div>
-    <div className='cantidad'>
+    <div className='cantidad'  onClick={props.more}>
  
 
-    <a onClick={props.more}> <img src="./arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" alt="" /> </a>
+    <a> <img src="./arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" alt="" /> </a>
     </div>
         </>
   )

@@ -2,9 +2,12 @@ import React from 'react'
 import { useState } from 'react'
 import RandomColors from './components/RandomColors'
 import CantidadTarjetas from './components/CantidadTarjetas'
+import CambiarModo from './components/CambiarModo'
 function App() {
 
   const [cantidad, setCantidad] = useState(1)
+
+  const [redo,setRedo] = useState(0)
 
 
   function mostrarTarjetas(){
@@ -21,7 +24,10 @@ function App() {
   const more = ()=>{
     if(cantidad<16)
     setCantidad(cantidad+1)
+    
   }
+
+
 
   return (
     <div className="App">
@@ -35,6 +41,9 @@ function App() {
      </div>
      <div className='containerAmount'>
     <CantidadTarjetas cantidad={cantidad} more={more} less={less}></CantidadTarjetas>
+     </div>
+    <div class="seccionCambiar"> 
+     <CambiarModo redo = {redo} setRedo={setRedo}></CambiarModo>
      </div>
     </div>
   )
