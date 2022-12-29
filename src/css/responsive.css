@@ -1,0 +1,111 @@
+@media (max-width: 638px) {
+
+
+    h1 {
+        color: white;
+        font-size: 12vw;
+        font-family: 'Unbounded', cursive;
+    }
+
+
+
+    .botones {
+        display: none;
+    }
+
+    .botonesResponsive {
+        display: block;
+    }
+
+
+
+    .containerAmount {
+        height: 6vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .cantidad {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color: beige;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-size: 13vw;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 12px;
+        margin: 25px
+    }
+
+    .cantidad:hover {
+        background-color: white;
+        cursor: pointer;
+
+    }
+
+
+    .cambioModo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        background-color: beige;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-size: 13vw;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 12px;
+        margin: 25px
+    }
+
+    .regenerate {
+        width: 10vw;
+    }
+
+    /* Random color Cards */
+
+    .container {
+        display: flex;
+        height: 100%;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        /* display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1vw);
+        height: 100%;
+        justify-content: center; 
+        align-items: center;
+        align-content: center;
+        justify-items: center; */
+    }
+
+    .ColorCards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .info {
+        color: white;
+        font-size: 5vw;
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+
+    .information{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+

@@ -24,6 +24,10 @@ function RandomColors() {
   margin-bottom: 20px;
   background-color: ${hsl};
   color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   &:hover{
     cursor: pointer;
     width: 11vw;
@@ -36,11 +40,28 @@ function RandomColors() {
     weight: 700;
     text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
                1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
-  }
+               @media (max-width: 638px) {
+                width: 95vw;
+                height: 26vw;
+                border-color: transparent;
+                border-radius: 5px;
+                margin-bottom: 2vw;
+                margin-right: 3vw;
+            }
+
+              }
+              @media (max-width: 638px) {
+                width: 95vw;
+                height: 25vw;
+                border-color: transparent;
+                border-radius: 5px;
+                margin-bottom: 2vw;
+                margin-right: 3vw;
+            }
   `
     return (
-    <>
-    <div> 
+<>
+    <div className='ColorCards'> 
     <CopyToClipboard text={hex}>
     <Cards  onClick={() => toast('✅ Copied to clipboard')}>
 
@@ -52,19 +73,19 @@ function RandomColors() {
    </CopyToClipboard>
 
       <Toaster/>
+    
 
     <div className='information'> 
 
-    <div className='info'>{hex}
+    <div className='info'>{hex} </div>
+
+    <div className='info'>{hsl} </div>
+
     </div>
-    <div className='info'>
-    {hsl}
+   
+
     </div>
-    </div>
-    <div>
-     
-    </div>
-    </div>
+    
 
  
   

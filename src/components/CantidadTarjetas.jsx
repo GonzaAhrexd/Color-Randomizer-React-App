@@ -5,8 +5,8 @@ function CantidadTarjetas(props) {
 
 
    <>
-    <div className='cantidad'>
-      <a onClick={props.less}> <img src="./arrow_downward_FILL0_wght400_GRAD0_opsz48.svg" alt="" /> </a>
+    <div onClick={props.less} className='cantidad'>
+      <a > <img src="./arrow_downward_FILL0_wght400_GRAD0_opsz48.svg" alt="" /> </a>
     </div>
    <div className='cantidad'>
     {props.cantidad}
@@ -16,6 +16,7 @@ function CantidadTarjetas(props) {
 
     <a> <img src="./arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" alt="" /> </a>
     </div>
+    
         </>
   )
 }
